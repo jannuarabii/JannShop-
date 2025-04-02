@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+    <link rel="stylesheet" href="style1.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&family=Luckiest+Guy&family=Madimi+One&family=Margarine&family=Oregano:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&family=Wix+Madefor+Display:wght@400..800&family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&family=Yuji+Boku&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Lobster&family=Luckiest+Guy&family=Madimi+One&family=Margarine&family=Oregano:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&family=Wix+Madefor+Display:wght@400..800&family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&family=Yuji+Boku&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Kadwa:wght@400;700&family=Lobster&family=Luckiest+Guy&family=Madimi+One&family=Margarine&family=Mochiy+Pop+One&family=Narnoor:wght@400;500;600;700;800&family=Oregano:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Wix+Madefor+Display:wght@400..800&family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&family=Yuji+Boku&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+
+    <nav id="navbar-home">
+        <div class="nav-logo">
+            <div class="text-nav">
+                <span class="jann">Jann</span><span class="shop">shop</span>
+            </div>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="article.html"  class="active">Article</a></li>
+            <li><a href="shop.html">Shop</a></li>
+        </ul>
+
+        <div class="right-content">
+            <a href="contact.html">Contact</a>
+            <div class="menu-toggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>      
+    </nav>
+
+    <header class="header-section">
+        <div class="header-container">
+            <hr>
+            <h1>
+                <span class="purple">Fruits</span>, <span class="green">Health</span>, and <span class="red">Everything</span> You
+                Need to Know!
+            </h1>
+            <hr>
+        </div>
+        <div class="search-container">
+            <i class='bx bx-search-alt search'></i>
+            <input type="text" id="searchbox" placeholder="Search Article..." onclick="activeSearch()">
+            <i class='bx bxs-send send'></i>
+        </div>
+        <div class="dropdown-container">
+            <div class="dropdown">
+                <div class="select">
+                    <span class="selected">Categories</span>
+                    <div class="caret"></div>
+                </div>
+                <ul class="menu">
+                    <li>Fruits</li>
+                    <li>Health</li>
+                    <li>Sports</li>
+                    <li>Vegetables</li>
+                    <li>Juices</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="article-section">
+        <div class="article-container">
+            <div class="article-grid">
+                <div class="article-item">
+                    <div class="article-title">
+                        <h2>16 Maret 2025</h2>
+                        <button class="top-btn">fruit</button>
+                    </div>
+                    <img src="./assets/article/1.png" alt="">
+                    <div class="description-article">
+                        <h2>A Refreshing Source of Vitamin C</h2>
+                        <p>
+                            Packed with vitamin C, oranges help boost 
+                            your immune system and keep your skin glowing.
+                            A perfect citrus treat for a healthy and refreshing day!
+                        </p>
+                    </div>
+                    <div class="bottom-article">
+                        <button class="bottom-btn">Read More</button>
+                        <span>100 comments</span>
+                    </div>
+                </div>
+                <div class="article-item">
+                    <div class="article-title">
+                        <h2>16 Maret 2025</h2>
+                        <button class="top-btn">fruit</button>
+                    </div>
+                    <img src="./assets/article/2.png" alt="">
+                    <div class="description-article">
+                        <h2>Superfruit with Countless Benefits</h2>
+                        <p>
+                            An apple a day keeps the doctor away!
+                            Apples support heart health, regulate blood 
+                            sugar levels, and make a delicious, fiber-rich snack.
+                            healthiest fruit!
+                        </p>
+                    </div>
+                    <div class="bottom-article">
+                        <button class="bottom-btn">Read More</button>
+                        <span>100 comments</span>
+                    </div>
+                </div>
+                <div class="article-item">
+                    <div class="article-title">
+                        <h2>16 Maret 2025</h2>
+                        <button class="top-btn">health</button>
+                    </div>
+                    <img src="./assets/article/3.png" alt="">
+                    <div class="description-article">
+                        <h2> Tips for a Calmer Mind</h2>
+                        <p>
+                            Practicing mindfulness, deep breathing, and 
+                            taking breaks can help reduce stress and improve mental 
+                            well-being. A peaceful mind leads to a healthier body!
+                        </p>
+                    </div>
+                    <div class="bottom-article">
+                        <button class="bottom-btn">Read More</button>
+                        <span>100 comments</span>
+                    </div>
+                </div>
+                <div class="article-item">
+                    <div class="article-title">
+                        <h2>16 Maret 2025</h2>
+                        <button class="top-btn">health</button>
+                    </div>
+                    <img src="./assets/article/4.png" alt="">
+                    <div class="description-article">
+                        <h2>Key to a Stronger Immune System</h2>
+                        <p>
+                            Getting 7-9 hours of sleep each night helps repair
+                            your body, reduce stress, and keep your immune system 
+                            strong. Prioritize your rest and healthy is important!
+                        </p>
+                    </div>
+                    <div class="bottom-article">
+                        <button class="bottom-btn">Read More</button>
+                        <span>100 comments</span>
+                    </div>
+                </div>
+                <div class="article-item">
+                    <div class="article-title">
+                        <h2>16 Maret 2025</h2>
+                        <button class="top-btn">health</button>
+                    </div>
+                    <img src="./assets/article/5.png" alt="">
+                    <div class="description-article">
+                        <h2>The Power of Daily Exercise </h2>
+                        <p>
+                            Regular physical activity boosts your mood, 
+                            strengthens your muscles, and improves heart health. 
+                            A little movement goes a long way and long term life!
+                        </p>
+                    </div>
+                    <div class="bottom-article">
+                        <button class="bottom-btn">Read More</button>
+                        <span>100 comments</span>
+                    </div>
+                </div>
+                <div class="article-item">
+                    <div class="article-title">
+                        <h2>16 Maret 2025</h2>
+                        <button class="top-btn">fruit</button>
+                    </div>
+                    <img src="./assets/article/6.png" alt="">
+                    <div class="description-article">
+                        <h2>Healthy Fats for a Stronger Body</h2>
+                        <p>
+                            Loaded with healthy fats, avocados nourish your heart, 
+                            improve skin health, and provide lasting energy. 
+                            A creamy delight with endless benefits and good for body!
+                        </p>
+                    </div>
+                    <div class="bottom-article">
+                        <button class="bottom-btn">Read More</button>
+                        <span>100 comments</span>
+                    </div>
+                </div>
+            </div>
+            <div class="see-all">
+                <div class="line"></div>
+                <button class="see-btn">See All</button>
+                <div class="line"></div>
+            </div>
+            
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
