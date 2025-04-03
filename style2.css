@@ -596,7 +596,7 @@ header {
     }
 
     .nav-links a {
-        color: var(--white);
+        color: var(--text-color);
     }
 
     .nav-links a:hover {
